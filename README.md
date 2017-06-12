@@ -5,10 +5,14 @@
 An implementation of React Native's DatePickerIOS with additional property 'calendar'
 
 ## Installation.
-   
-$ npm install react-native-datepicker-ios --save
 
-$ react-native link react-native-datepicker-ios
+```bash   
+npm install react-native-datepicker-ios --save
+```
+
+```bash
+react-native link react-native-datepicker-ios
+```
 
 ## List of available calendars.
 * gregorian
