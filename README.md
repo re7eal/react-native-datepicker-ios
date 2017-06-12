@@ -1,4 +1,4 @@
-# react-native-datepicker-ios.
+# react-native-datepicker-ios
 
 #### This component works only on iOS.
 
