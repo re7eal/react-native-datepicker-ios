@@ -26,8 +26,7 @@ const DatePickerIOS = React.createClass({
 
   getDefaultProps: function () {
     return {
-      mode: 'datetime',
-      calendar: 'gregorian'
+      mode: 'datetime'
     };
   },
 
