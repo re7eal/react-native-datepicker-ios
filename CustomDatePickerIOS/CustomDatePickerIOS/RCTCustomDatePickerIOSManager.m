@@ -48,7 +48,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-    return [RCTDatePickerIos new];
+    return [RCTCustomDatePickerIOS new];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(date, NSDate)
