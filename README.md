@@ -36,8 +36,6 @@ Same as React Native DatePickerIOS (version 0.45)
 
 ```javascript
   import DatePickerIOS from 'react-native-datepicker-ios';
-  
- _onDateChange: function({date, timestamp}){}
  
  <DatePickerIOS 
    calendar="buddhist"
