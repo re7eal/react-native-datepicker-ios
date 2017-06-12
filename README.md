@@ -4,7 +4,7 @@
 
 An implementation of React Native's DatePickerIOS with additional property 'calendar'
 
-## Installation.
+## Installation
 
 ```bash   
 npm install react-native-datepicker-ios --save
@@ -14,7 +14,7 @@ npm install react-native-datepicker-ios --save
 react-native link react-native-datepicker-ios
 ```
 
-## List of available calendars.
+## List of available calendars
 * gregorian
 * buddhist
 * hijri (islamicUmmAlQura, islamic, islamicCivil, islamicTabular)
@@ -26,7 +26,7 @@ react-native link react-native-datepicker-ios
 * coptic
 * iso8601
 
-## Available props.
+## Available props
 
 Same as React Native DatePickerIOS (version 0.45)
 
