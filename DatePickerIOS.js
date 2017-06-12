@@ -3,15 +3,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   StyleSheet,
-  Text,
   View,
-  NativeModules,
   requireNativeComponent,
 } from 'react-native';
 
-const DatePickerIOS = React.createClass({
+class DatePickerIOS extends Component {
 
-  propTypes: {
+  static propTypes = {
     date: PropTypes.instanceOf(Date).isRequired,
     onChange: PropTypes.func,
     onDateChange: PropTypes.func.isRequired,
@@ -22,15 +20,13 @@ const DatePickerIOS = React.createClass({
     timeZoneOffsetInMinutes: PropTypes.number,
     dateFormat: PropTypes.string,
     calendar: PropTypes.string,
-  },
+  };
 
-  getDefaultProps: function () {
-    return {
-      mode: 'datetime'
-    };
-  },
+  static defaultProps = {
+    mode: 'datetime'
+  };
 
-  _onChange(event) {
+  _onChange = (event) => {
     const nativeTimeStamp = event.nativeEvent.timestamp;
     this.props.onDateChange && this.props.onDateChange(
       new Date(nativeTimeStamp)
@@ -44,14 +40,14 @@ const DatePickerIOS = React.createClass({
         date: propsTimeStamp,
       });
     }
-  },
+  }
   
   render() {
     const props = this.props;
     return (
       <View style={props.style}>
         <RCTDatePickerIos
-          ref={ picker => { this._picker = picker; } }
+          ref={picker => this._picker = picker}
           style={styles.datePickerIOS}
           date={props.date.getTime()}
           maximumDate={
@@ -72,7 +68,8 @@ const DatePickerIOS = React.createClass({
       </View>
     );
   }
-});
+}
+
 const styles = StyleSheet.create({
   datePickerIOS: {
     height: 216,
@@ -90,4 +87,4 @@ var RCTDatePickerIos = requireNativeComponent('RCTCustomDatePickerIOS', {
   }
 });
 
-module.exports = DatePickerIOS;
+export default DatePickerIOS;
