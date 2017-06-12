@@ -13,7 +13,7 @@ $ react-native link react-native-datepicker-ios
 ## List of available calendars.
 * gregorian
 * buddhist
-* hijri [islamicUmmAlQura, islamic, islamicCivil, islamicTabular]
+* hijri (islamicUmmAlQura, islamic, islamicCivil, islamicTabular)
 * chinese
 * republicOfChina
 * persian 
@@ -26,7 +26,7 @@ $ react-native link react-native-datepicker-ios
 
 Same as React Native DatePickerIOS (version 0.45)
 
-###Additional props
+### Additional props
 
 | Name | Type| Default | Description |
 | --- | --- | --- | --- |
